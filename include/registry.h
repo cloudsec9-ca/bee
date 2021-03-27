@@ -33,3 +33,16 @@ typedef struct _HBASE_BLOCK
 	ULONG BootType;
 	ULONG BootRecover;
 } HBASE_BLOCK, *PHBASE_BLOCK;
+
+typedef struct _HBIN
+{
+	ULONG Signature;
+
+	HCELL_INDEX FileOffset;
+	ULONG Size;
+
+	ULONG Reserved1[2];
+	LARGE_INTEGER TimeStamp;
+
+	ULONG Spare;
+} HBIN, *PHBIN;
