@@ -46,3 +46,8 @@ typedef struct _HBIN
 
 	ULONG Spare;
 } HBIN, *PHBIN;
+
+typedef struct _HCELL
+{
+	LONG Size;
+} HCELL, *PHCELL;
